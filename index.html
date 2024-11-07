@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym</title>
+  </head>
+  <body>
+    <script type="module" src="/main.js"></script>
+    
+   <h1 class="h1 border-titulo">Vení al Gym!💪</h1>
+
+  <fieldset>
+    <legend>🙋‍♂️ Datos Personales 👀</legend>
+    <div style="text-align:center;" class="margen">
+      <label for="nombre">Nombre: *</label><br><br>
+      <input type="text" id="nombre" name="nombre" class="center celda margen" required>
+    </div>
+<div style="text-align:center;" class="margen">
+  <label for="Apellido">Apellido:*</label><br><br>
+  <input type="text" name="Apellido" id="Apellido" class="center celda margen">
+</div>
+<div style=" text-align:center;" class="margen">
+<label for="Documento">Documento:*</label>
+<input type="text" name="Documento" id="Documento" class="center celda margen">
+</div>
+<div style="text-align:center;" class="margen">
+  <label for="Nacionalidad">Nacionalidad</label>
+  <select name="select" required class="center celda margen">
+    <option value="0"></option>
+  <option value="1">Venezuela</option>
+  <option value="2">Argentina</option>
+  <option value="3">Brasil</option>
+  <option value="4">Chile</option>
+  <option value="5">Mexico</option>
+  <option value="5">otro</option>
+</select>
+</div>
+
+<div style="text-align:center;" class="margen">
+  <label for="Descripcion">Contanos un poco de vos...</label>
+  <textarea name="Descripcion" rows="10" cols="90" class="margen center celda-contact"></textarea>
+</div>
+<div style="text-align: center;" class="margen">
+  <label for="Sexo" >Sexo:*</label><br><br>
+
+  <input type="radio" name="Genero" value="Femenino" >
+  <label for="Femenino" >Femenino</label>
+  <input type="radio" name="Genero" value="Masculino" >
+  <label for="Masculino">Masculino</label>
+  <input type="radio" name="Genero" value="Otro" >
+  <label for="Otro">Otro</label>
+</div>
+</fieldset>
+
+
+<div class="puntos"></div>
+
+  <fieldset>
+    <legend>📱Datos de Contacto 📧</legend>
+    <div style="text-align:center;" class="margen">
+      <label for="Telefono">Telefono</label>
+      <input type="number" placeholder="Codigo de área y número" class="center celda margen">
+    </div>
+  <div style="text-align: center;" class="margen">
+    <label for="Correo">Direccion de correo electronico</label>
+    <input type="email" required placeholder="mail@gmail.com" class="center celda margen">
+  </div>
+  </fieldset>
+ 
+  <div class="puntos"></div>
+
+  <fieldset>
+    <legend>🚴🏽 Actividades 🤸🏽</legend>
+    <p>Por favor, indicar cuales Actividades te interesan.</p>
+    <p>Sede Caracas</p>
+    <input type="checkbox" name="actividad" value="basquet">
+    <label for="">Básquet</label>
+    <input type="checkbox" name="actividad" value="boxeo">
+    <label for="">Fútbol</label>
+    <input type="checkbox" name="actividad" value="futbol">
+    <label for="">Futbol</label>
+    <input type="checkbox" name="actividad" value="Tenis">
+    <label for="">Tenis</label>
+
+    <p>Sede Valencia</p>
+    <input type="checkbox" name="actividad" value="basquet">
+    <label for="">Básquet</label>
+    <input type="checkbox" name="actividad" value="futbol">
+    <label for="">Fútbol</label>
+    <input type="checkbox" name="actividad" value="rugby">
+    <label for="">Rugby</label>
+    <input type="checkbox" name="actividad" value="voley">
+    <label for="">Voley</label>
+  </fieldset>
+
+  <div id="blanco">
+    <input type="checkbox" name="condiciones" value="condiciones" required>
+    <label for="">Acepto las condiciones*</label>
+    <input type="checkbox" name="novedades" value="novedades">
+    <label for="">Deseo recibir novedades</label>
+    
+  <button type="submit">Iniciar afilacion</button>
+  <button type="reset">Restablecer</button>
+
+  </div>
+  </body>
+</html>
